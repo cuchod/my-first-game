@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MappComponent } from './mapp/mapp.component';
+import { TileComponent } from './tile/tile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MappComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule

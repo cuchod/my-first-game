@@ -1,0 +1,10 @@
+<div [id]="tileId" class="tile" [ngClass]="(this.unit?.facing) ? this.unit.facing : ''">
+    <div *ngIf="this.unit?.sprite" >
+        <img class="sprite" [src]="'assets/sprites/'+this.unit?.sprite+'.png'">
+        <div *ngIf="this.unit?.healthPoints" class="healthPoints">
+            {{this.unit.healthPoints}} HP
+        </div>        
+    </div>
+
+    <ng-content></ng-content>
+</div>

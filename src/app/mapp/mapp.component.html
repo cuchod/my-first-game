@@ -1,0 +1,9 @@
+<div class="mapp">
+    <div *ngFor="let row of rows" class="mapp-row">
+        <div *ngFor="let column of columns" [id]="row" class="mapp-column">
+            <app-tile [tileId]="'t' + column + row">
+
+            </app-tile>
+        </div>
+    </div>
+</div>
